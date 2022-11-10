@@ -1,3 +1,127 @@
+@font-face {
+  font-family: Alegreya;
+  src: url(../fonts/Alegreya/Alegreya-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Alegreya;
+  src: url(../fonts/Alegreya/Alegreya-Regular.woff);
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: Josefin-Sans;
+  src: url(../fonts/Josefin-Sans/JosefinSans-SemiBold.woff);
+  font-weight: semibold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Josefin-Sans;
+  src: url(../fonts/Josefin-Sans/JosefinSans-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Abril-Fatface;
+  src: url(../fonts/Abril/Abrilfatfaceregular.woff);
+  font-weight: regular;
+  font-style: normal;
+}
+.header {
+  padding: 35px;
+  font-family: Alegreya;
+  position: relative;
+}
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__container .nav {
+  display: flex;
+  gap: 60px;
+  margin-left: 120px;
+  color: #837171;
+  font-size: 24px;
+}
+.header__container .nav .nav__link {
+  position: relative;
+}
+.header__container .nav .nav__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #FF2625;
+  width: 0;
+  height: 2px;
+  transition: 0.6s all;
+}
+.header__container .nav .nav__link:hover::before {
+  width: 100%;
+}
+.header__container .nav .nav__link:first-child {
+  color: #000;
+}
+
+.banner {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  z-index: -2;
+}
+.banner .banner__img {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .hamburger {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: #FFDE80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    transform: translateX(100%);
+    transition: 0.8s all;
+  }
+  .nav.is-active {
+    transform: translateX(0);
+  }
+  .nav.is-active .nav__link {
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav {
+    width: 100vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: non;
+}
 
 /*# sourceMappingURL=style.css.map */

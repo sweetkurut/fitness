@@ -1,0 +1,7 @@
+@mixin container($width)
+  max-width: $width
+  margin: 0 auto
+
+@mixin media($size) 
+  @media (max-width: $size) 
+    @content

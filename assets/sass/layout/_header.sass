@@ -1,0 +1,75 @@
+
+  
+.header
+  padding: 35px
+  font-family: $font-main
+  position: relative
+
+.container
+  +container(1170px)
+  margin: 0 auto
+
+.header__container
+  display: flex
+  align-items: center
+  // z-index: 5
+  .nav
+    display: flex
+    gap: 60px
+    margin-left: 120px
+    color: $gray
+    font-size: 24px
+    .nav__link
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        background: #FF2625
+        width: 0
+        height: 2px
+        transition: .6s all
+      &:hover::before
+        width: 100%
+      &:first-child
+        color: #000
+
+
+.banner
+  position: absolute
+  top: -1px
+  right: 0
+  z-index: -2
+  .banner__img
+    width: 100%
+
+
+.hamburger
+  display: none
+
+@include media(560px)
+  .hamburger
+    display: block
+  .nav
+    position: fixed
+    top: 0
+    right: 0
+    width: 400px
+    height: 100vh
+    background: #FFDE80
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    color: $white
+    transform: translateX(100%)
+    transition: .8s all
+  .nav.is-active
+    transform: translateX(0)
+    .nav__link
+      color: $white
+      font-weight: bold
+  .nav
+    width: 100vw
