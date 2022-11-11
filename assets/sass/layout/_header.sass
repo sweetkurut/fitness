@@ -47,6 +47,10 @@
 
 .hamburger
   display: none
+  position: absolute
+  top: 0
+  right: 0
+  padding: 20px
 
 @include media(560px)
   .hamburger
@@ -63,13 +67,12 @@
     justify-content: center
     flex-direction: column
     text-align: center
-    color: $white
     transform: translateX(100%)
     transition: .8s all
   .nav.is-active
     transform: translateX(0)
     .nav__link
-      color: $white
+      color: $dark
       font-weight: bold
   .nav
     width: 100vw

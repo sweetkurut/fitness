@@ -1,0 +1,114 @@
+.container
+  +container(1170px)
+
+.main
+  font-family: $font-jose
+  padding-top: 200px
+  &__subtitle
+    display: flex
+    align-items: center
+    gap: 15px
+    margin-bottom: 40px
+    .subTitle
+      color: $red
+      font-weight: 600
+      font-size: 26px
+    .main__icon
+      width: 30px
+      height: 30px
+  
+
+
+.main__descriptions
+  .main__title
+    font-size: 80px
+    font-weight: 700
+    line-height: 90px
+    color: $dark
+    margin-bottom: 25px
+  .main__text
+    font-family: $font-main
+    color: $gray
+    font-size: 22px
+    line-height: 35px
+
+
+.main__buttons
+  font-family: $font-main
+  padding-top: 40px
+  display: flex
+  align-items: center
+  gap: 30px
+  .btn
+    padding: 10px 57px
+    background: $red
+    border-radius: 29px
+    color: $white
+    font-weight: 700
+    font-size: 22px
+    transition: .8s ease-in-out
+    &:hover
+      background: transparent
+      border: solid 1px $red
+      color: $dark
+      box-shadow: 7px 5px 7px #0000005d
+  .button
+    background: transparent
+    border: solid 1px $red
+    color: $dark
+    font-weight: 400
+    &:hover
+      background: $red
+      color: $white
+
+
+.last-main__title
+  padding-top: 60px
+  color: #cccccc3a
+  font-size: 200px
+
+
+@include media(800px)
+  .last-main__title
+    font-size: 120px
+  .main
+    padding: 20px
+    padding-top: 295px
+  .subTitle
+    text-align: center
+    font-size: 26px
+
+
+  .logo
+    display: none
+
+@include media(480px)
+  .main__subtitle
+    text-align: center
+    .subTitle
+      font-size: 20px
+  .main
+    padding: 20px
+    padding-top: 295px
+  .main__descriptions
+    display: flex
+    flex-direction: column
+    text-align: center
+    .main__title
+      font-size: 30px
+      line-height: 45px
+    .main__text
+      font-size: 20px
+      line-height: 25px
+  .last-main__title
+    font-size: 60px
+    text-align: center
+  .main__buttons
+    display: flex
+    flex-direction: column
+    .btn
+      padding: 10px 20px
+      border-radius: 10px
+      font-weight: 400
+
+
