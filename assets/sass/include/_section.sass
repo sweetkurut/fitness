@@ -1,0 +1,84 @@
+.container
+  +container(1170px)
+
+.section
+  padding-top: 90px
+
+.section__subtitle
+  color: $red
+  font-family: $font-jose
+  text-align: center
+  font-size: 26px
+
+.section__title
+  text-align: center
+  padding-top: 30px
+  font-family: $font-jose
+  color: $dark
+  font-size: 44px
+  line-height: 58px
+
+.section__cards
+  padding-top: 60px
+
+.cards
+  font-family: $font-main
+  display: flex
+  gap: 30px
+  align-items: center
+  .card
+    width: 150px
+    padding: 60px
+    background: $white
+    border: 0.5px solid #E1E1E1
+    border-radius: 5px 5px 5px 35px
+    transition: .8s all
+    &:hover
+      cursor: pointer
+      box-shadow: 17px 14px 15px #0000004b
+      .show__button
+        max-height: 200px
+
+.card__content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .card-main__title
+    font-weight: 700
+    color: $dark
+    font-size: 24px
+
+.card-main__title
+  padding-top: 50px
+
+.show__button
+  max-height: 0
+  display: block
+  overflow: hidden
+  transition: .6s all
+  margin-top: 40px
+  color: $red
+  margin-left: auto
+  margin-right: auto
+  width: max-content
+  font-family: $font-main
+  font-size: 22px
+  font-weight: 400
+
+
+@include media(1180px)
+  .cards
+    display: flex
+    flex-wrap: wrap
+    padding: 15px
+
+
+
+@include media(800px)
+  .section__title
+    font-size: 30px
+    line-height: 35px
+  .cards
+    display: flex
+    flex-direction: column

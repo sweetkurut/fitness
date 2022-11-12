@@ -3,12 +3,13 @@
 
 .main
   font-family: $font-jose
-  padding-top: 200px
+  padding-top: 100px
   &__subtitle
     display: flex
     align-items: center
     gap: 15px
-    margin-bottom: 40px
+    margin-bottom: 30px
+    padding-top: 70px
     .subTitle
       color: $red
       font-weight: 600
@@ -63,10 +64,9 @@
 
 
 .last-main__title
-  padding-top: 60px
-  color: #cccccc3a
+  padding-top: 120px
+  color: #a3a1a13a
   font-size: 200px
-
 
 @include media(800px)
   .last-main__title
@@ -81,6 +81,8 @@
 
   .logo
     display: none
+
+
 
 @include media(480px)
   .main__subtitle
@@ -102,6 +104,7 @@
       line-height: 25px
   .last-main__title
     font-size: 60px
+    padding-top: 5
     text-align: center
   .main__buttons
     display: flex
@@ -110,5 +113,3 @@
       padding: 10px 20px
       border-radius: 10px
       font-weight: 400
-
-

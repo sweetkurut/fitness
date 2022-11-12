@@ -1,7 +1,14 @@
+// HAMBURGER-MENU
+let hamburger = document.querySelector('.hamburger');
+let menu = document.querySelector('.nav');
 
-  var hamburger = document.querySelector(".hamburger");
-  var nav = document.querySelector(".nav");
-  hamburger.addEventListener("click", function() {
-    hamburger.classList.toggle("is-active");
-    nav.classList.toggle("is-active");
-  });
+const toggleMenu = () => {
+  menu.classList.toggle('is-active');
+  hamburger.classList.toggle('is-active');
+}
+
+hamburger.addEventListener('click', e => {
+  e.stopPropagation();
+
+  toggleMenu();
+});
