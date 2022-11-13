@@ -266,15 +266,121 @@
   margin: 0 auto;
 }
 
-.article-image {
-  position: relative;
-}
-.article-image .article-image__dots {
-  position: absolute;
-  top: 0;
-  left: 0;
+.article__card {
+  padding-top: 150px;
+  font-family: Josefin-Sans;
 }
 
+.article-card__content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  padding-bottom: 100px;
+}
+.article-card__content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.post-image {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.article__description .article__subtitle {
+  color: #FF2625;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.article__description .article__title {
+  font-size: 44px;
+  color: #3A1212;
+  line-height: 58px;
+  margin-bottom: 25px;
+}
+.article__description .article__text {
+  font-family: Alegreya;
+  font-size: 22px;
+  font-weight: 400;
+  color: #837171;
+  margin-bottom: 42px;
+}
+.article__description .article__btn {
+  padding: 12px 45px;
+  background: #FF2625;
+  font-family: Alegreya;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.article-card__session {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+@media (max-width: 1200px) {
+  .article-card__content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+  .article-card__session {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .article-image {
+    width: 100%;
+  }
+}
+@media (max-width: 510px) {
+  .article__description .article__title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .article__description .article__subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .article__description .article__text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .article__description .article__btn {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .article__description .article__title {
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .article__description .article__subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .article__description .article__text {
+    font-size: 16px;
+    text-align: center;
+  }
+  .article__description .article__btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+}
 .header {
   padding: 35px;
   font-family: Alegreya;

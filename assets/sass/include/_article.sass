@@ -1,9 +1,103 @@
 .container
   +container(1170px)
 
-.article-image
+.article__card
+  padding-top: 150px
+  font-family: $font-jose
+
+.article-card__content
+  display: flex
+  align-items: center
+  gap: 80px
   position: relative
-  .article-image__dots
-    position: absolute
-    top: 0
-    left: 0
+  padding-bottom: 100px
+  &:nth-child(even)
+    flex-direction: row-reverse
+
+.post-image
+  position: absolute
+  top: -40px
+  left: -40px
+
+.article__description
+  .article__subtitle
+    color: $red
+    font-weight: 600
+    font-size: 26px
+    margin-bottom: 30px
+  .article__title
+    font-size: 44px
+    color: $dark
+    line-height: 58px
+    margin-bottom: 25px
+  .article__text
+    font-family: $font-main
+    font-size: 22px
+    font-weight: 400
+    color: $gray
+    margin-bottom: 42px
+  .article__btn
+    padding: 12px 45px
+    background: $red
+    font-family: $font-main
+    font-weight: 700
+    font-size: 22px
+    color: $white
+    border-radius: 30px
+
+
+.article-card__session
+  display: flex
+  align-items: center
+  gap: 60px
+
+
+@include media(1200px)
+  .article-card__content
+    padding: 10px
+    display: flex
+    flex-direction: column
+    padding-bottom: 70px
+  .article-card__session
+    padding: 10px
+    display: flex
+    flex-direction: column
+  .article-image
+    width: 100%
+
+
+@include media(510px)
+  .article__description
+    .article__title
+      font-size: 28px
+      line-height: 35px
+      text-align: center
+    .article__subtitle
+      font-size: 20px
+      text-align: center
+    .article__text
+      font-size: 18px
+      text-align: center
+    .article__btn
+      display: inline-block
+      padding: 20px 40px
+      border-radius: 10px
+      font-size: 20px
+
+@include media(400px)
+  .article__description
+    .article__title
+      font-size: 24px
+      line-height: 35px
+      text-align: center
+    .article__subtitle
+      font-size: 18px
+      text-align: center
+    .article__text
+      font-size: 16px
+      text-align: center
+    .article__btn
+      display: inline-block
+      padding: 10px 20px
+      border-radius: 10px
+      font-size: 16px
