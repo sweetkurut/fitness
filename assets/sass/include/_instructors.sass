@@ -1,0 +1,62 @@
+.incstructors
+  padding-top: 140px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .instructors__titles
+    font-family: $font-jose
+    text-align: center
+    margin-bottom: 60px
+    .subtitle__inst
+      color: $red
+      font-size: 26px
+      font-weight: 600
+      margin-bottom: 30px
+    .title__inst
+      font-size: 44px
+      font-weight: 700
+      line-height: 58px
+      color: $dark
+  .instructors__content
+    font-family: $font-main
+  .session-inst__desc
+    margin-top: 40px
+    margin-left: 75px
+    .couch__name
+      font-size: 24px
+      font-weight: 700
+      margin-bottom: 5px
+    .couch__info
+      font-size: 20px
+      font-weight: 400
+      color: #504747
+      margin-left: 5px
+
+.instructors__content2
+  font-family: $font-main  
+  padding-top: 50px
+
+.session-inst
+  display: flex
+  align-items: center
+  gap: 50px
+
+
+
+@include media(785px)
+  .incstructors
+    padding-top: 20px
+  .session-inst
+    display: flex
+    flex-direction: column
+  .subtitle__inst
+    font-size: 22px !important
+  .title__inst
+    font-size: 34px !important
+    line-height: 35px !important
+
+@include media(400px)
+  .title__inst
+    font-size: 30px !important
+  .subtitle__inst
+    font-size: 20px !important

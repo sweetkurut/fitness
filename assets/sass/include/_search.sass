@@ -1,0 +1,133 @@
+.aside
+  padding-top: 100px
+  font-family: $font-jose
+  position: relative
+  .aside__content
+    display: flex
+    gap: 100px
+
+.aside__description
+  .aside__span
+    color: $red
+    font-size: 26px
+  .aside__title
+    padding-top: 28px
+    font-size: 44px
+    font-weight: 700
+    line-height: 58px
+    color: $dark
+    // margin-bottom: 60px
+
+.separate-block
+  background: #FFFFFF
+  border-radius: 2px 100px 2px 2px
+  padding: 40px
+  position: absolute
+  top: 456px
+  left: 452px
+  right: 105px
+  max-width: 100%
+  .separate__text
+    font-size: 22px
+    color: #504747
+    line-height: 35px
+    font-style: italic
+    font-size: 22px
+  .info-couch
+    font-size: 18px
+    color: #504747
+
+.name
+  padding-top: 40px
+  margin-bottom: 10px
+  font-size: 24px
+  font-weight: 700
+  color: $dark
+
+.searh-input__desc
+  padding-top: 150px
+  text-align: center
+  > .title__search
+    font-size: 44px
+    color: $dark
+    margin-bottom: 25px
+  .text__search
+    font-size: 22px
+    font-family: $font-main
+    color: #504747
+    line-height: 35px
+
+.label-search
+  // width: 450px
+  max-width: 50%
+  margin: 0 auto
+  margin-top: 35px
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #fff
+  border-radius: 30px
+  padding: 2px
+  box-shadow: 7px 7px 10px 4px #00000036
+  margin-bottom: 20px
+  box-sizing: border-box
+
+input
+  padding: 20px 50px
+  border: none
+  outline: none
+  background: none
+  font-family: $font-main
+
+.input-btn
+  padding: 15px 38px
+  background: $red
+  border-radius: 30px
+  color: $white
+  margin-left: auto
+  margin-right: 10px
+  display: inline-block
+
+
+@include media(1140px)
+  .image__aside
+    width: 100%
+  .separate-block
+    display: none
+
+
+@include media(970px)
+  .aside__content
+    padding: 10px
+    display: flex
+    flex-direction: column-reverse
+
+  .aside__description
+    text-align: center
+
+  .aside__title
+    font-size: 32px !important
+    line-height: 35px !important
+
+  .label-search
+    max-width: 100%
+    .input-btn
+      padding: 10px 20px
+  .title__search
+    font-size: 34px !important
+  .searh-input__desc
+    padding-top: 20px
+
+
+@include media(400px)
+  .aside__title
+    font-size: 28px !important
+  .aside__span
+    font-size: 20px !important
+  .title__search
+    font-size: 25px !important
+  .input-btn  
+    margin-right: 40px
+  .text__search
+    font-size: 16px !important
+    line-height: 20px !important
