@@ -1,0 +1,97 @@
+.footer
+  padding-top: 100px
+
+.footer__content
+  display: flex
+  align-items: center
+  gap: 150px
+
+.footer-info
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+.footer__desc
+  .footer__text
+    font-family: $font-main
+    font-size: 22px
+    margin-bottom: 30px
+  .footer-icon
+    display: flex
+    align-items: center
+    gap: 14px
+    .fa-brands
+      padding: 10px 10px
+      background: $white
+      border-radius: 50%
+      color: $red
+      transition: .6s all
+      font-size: 20px
+      &:hover
+        background: $red
+        color: $white
+
+
+
+.footer-logo
+  font-family: $font-jose
+  .footer-nav__logo
+    font-size: 24px
+    color: $dark
+    font-weight: 600
+
+.footer-navs
+  padding-top: 40px
+  display: flex
+  flex-direction: column
+  gap: 18px
+  font-family: $font-main
+  color: #504747
+  font-size: 22px
+
+.footer-sub__info
+  padding-top: 45px
+  // text-align: center
+  font-family: $font-jose
+  color: $gray
+  font-size: 14px
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 20px
+
+.fa-solid
+  font-size: 17px
+
+@include media(1140px)
+  .footer__content
+    padding: 10px
+    max-width: 100%
+    display: flex
+    // flex-direction: 
+    flex-wrap: wrap
+    align-items: center
+    gap: 50px
+  .footer-navs
+    text-align: center
+
+@include media(770px)
+  .footer__content
+    display: flex
+    flex-direction: column
+
+@include media(570px)
+  .footer__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 35px
+  .footer-icon
+    display: flex
+    justify-content: center
+  .footer-sub__info
+    display: flex
+    flex-direction: column
+    font-size: 13px
+    max-width: 100%
+    justify-content: center
