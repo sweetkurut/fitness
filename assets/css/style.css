@@ -269,6 +269,11 @@
     margin-left: 0;
   }
 }
+@media (max-width: 420px) {
+  .card {
+    width: 150px !important;
+  }
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
