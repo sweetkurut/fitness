@@ -59,6 +59,7 @@
 @include media(560px)
   .hamburger
     display: block
+    z-index: 6
   .nav
     position: fixed
     top: 0
@@ -72,6 +73,7 @@
     flex-direction: column
     transform: translateX(100%)
     transition: .8s all
+    z-index: 6
   .nav.is-active
     transform: translateX(0)
     .nav__link

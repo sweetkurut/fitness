@@ -807,6 +807,7 @@ input {
 @media (max-width: 560px) {
   .hamburger {
     display: block;
+    z-index: 6;
   }
   .nav {
     position: fixed;
@@ -821,6 +822,7 @@ input {
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.8s all;
+    z-index: 6;
   }
   .nav.is-active {
     transform: translateX(0);
