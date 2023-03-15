@@ -813,9 +813,9 @@ input {
     position: fixed;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 150px;
     height: 100vh;
-    background: #FFDE80;
+    background: #ad944f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -830,9 +830,6 @@ input {
   .nav.is-active .nav__link {
     color: #3A1212;
     font-weight: bold;
-  }
-  .nav {
-    width: 100vw;
   }
   .banner__img {
     position: static;
