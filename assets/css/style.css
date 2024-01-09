@@ -45,7 +45,7 @@
   padding-top: 70px;
 }
 .main__subtitle .subTitle {
-  color: #FF2625;
+  color: #ff2625;
   font-weight: 600;
   font-size: 26px;
 }
@@ -58,7 +58,7 @@
   font-size: 80px;
   font-weight: 700;
   line-height: 90px;
-  color: #3A1212;
+  color: #3a1212;
   margin-bottom: 25px;
 }
 .main__descriptions .main__text {
@@ -77,7 +77,7 @@
 }
 .main__buttons .btn {
   padding: 10px 57px;
-  background: #FF2625;
+  background: #ff2625;
   border-radius: 29px;
   color: #fff;
   font-weight: 700;
@@ -86,18 +86,18 @@
 }
 .main__buttons .btn:hover {
   background: transparent;
-  border: solid 1px #FF2625;
-  color: #3A1212;
+  border: solid 1px #ff2625;
+  color: #3a1212;
   box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.3647058824);
 }
 .main__buttons .button {
   background: transparent;
-  border: solid 1px #FF2625;
-  color: #3A1212;
+  border: solid 1px #ff2625;
+  color: #3a1212;
   font-weight: 400;
 }
 .main__buttons .button:hover {
-  background: #FF2625;
+  background: #ff2625;
   color: #fff;
 }
 
@@ -129,7 +129,7 @@
   }
   .main__subtitle .subTitle {
     font-size: 20px;
-    color: #3A1212;
+    color: #3a1212;
   }
   .main {
     padding: 20px;
@@ -173,7 +173,7 @@
 }
 
 .section__subtitle {
-  color: #FF2625;
+  color: #ff2625;
   font-family: Josefin-Sans;
   text-align: center;
   font-size: 26px;
@@ -183,7 +183,7 @@
   text-align: center;
   padding-top: 30px;
   font-family: Josefin-Sans;
-  color: #3A1212;
+  color: #3a1212;
   font-size: 44px;
   line-height: 58px;
 }
@@ -202,7 +202,7 @@
   width: 150px;
   padding: 60px;
   background: #fff;
-  border: 0.5px solid #E1E1E1;
+  border: 0.5px solid #e1e1e1;
   border-radius: 5px 5px 5px 35px;
   transition: 0.8s all;
 }
@@ -222,7 +222,7 @@
 }
 .card__content .card-main__title {
   font-weight: 700;
-  color: #3A1212;
+  color: #3a1212;
   font-size: 24px;
 }
 
@@ -236,7 +236,7 @@
   overflow: hidden;
   transition: 0.6s all;
   margin-top: 40px;
-  color: #FF2625;
+  color: #ff2625;
   margin-left: auto;
   margin-right: auto;
   width: max-content;
@@ -302,14 +302,14 @@
 }
 
 .article__description .article__subtitle {
-  color: #FF2625;
+  color: #ff2625;
   font-weight: 600;
   font-size: 26px;
   margin-bottom: 30px;
 }
 .article__description .article__title {
   font-size: 44px;
-  color: #3A1212;
+  color: #3a1212;
   line-height: 58px;
   margin-bottom: 25px;
 }
@@ -322,7 +322,7 @@
 }
 .article__description .article__btn {
   padding: 12px 45px;
-  background: #FF2625;
+  background: #ff2625;
   font-family: Alegreya;
   font-weight: 700;
   font-size: 22px;
@@ -409,7 +409,7 @@
   margin-bottom: 60px;
 }
 .incstructors .instructors__titles .subtitle__inst {
-  color: #FF2625;
+  color: #ff2625;
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -418,7 +418,7 @@
   font-size: 44px;
   font-weight: 700;
   line-height: 58px;
-  color: #3A1212;
+  color: #3a1212;
 }
 .incstructors .instructors__content {
   font-family: Alegreya;
@@ -485,7 +485,7 @@
 }
 
 .aside__description .aside__span {
-  color: #FF2625;
+  color: #ff2625;
   font-size: 26px;
 }
 .aside__description .aside__title {
@@ -493,11 +493,11 @@
   font-size: 44px;
   font-weight: 700;
   line-height: 58px;
-  color: #3A1212;
+  color: #3a1212;
 }
 
 .separate-block {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 2px 100px 2px 2px;
   padding: 40px;
   position: absolute;
@@ -523,7 +523,7 @@
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 700;
-  color: #3A1212;
+  color: #3a1212;
 }
 
 .searh-input__desc {
@@ -532,7 +532,7 @@
 }
 .searh-input__desc > .title__search {
   font-size: 44px;
-  color: #3A1212;
+  color: #3a1212;
   margin-bottom: 25px;
 }
 .searh-input__desc .text__search {
@@ -567,7 +567,7 @@ input {
 
 .input-btn {
   padding: 15px 38px;
-  background: #FF2625;
+  background: #ff2625;
   border-radius: 30px;
   color: #fff;
   margin-left: auto;
@@ -657,12 +657,12 @@ input {
   padding: 10px 10px;
   background: #fff;
   border-radius: 50%;
-  color: #FF2625;
+  color: #ff2625;
   transition: 0.6s all;
   font-size: 20px;
 }
 .footer__desc .footer-icon .fa-brands:hover {
-  background: #FF2625;
+  background: #ff2625;
   color: #fff;
 }
 
@@ -671,7 +671,7 @@ input {
 }
 .footer-logo .footer-nav__logo {
   font-size: 24px;
-  color: #3A1212;
+  color: #3a1212;
   font-weight: 600;
 }
 
@@ -769,7 +769,7 @@ input {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #FF2625;
+  background: #ff2625;
   width: 0;
   height: 2px;
   transition: 0.6s all;
@@ -828,7 +828,7 @@ input {
     transform: translateX(0);
   }
   .nav.is-active .nav__link {
-    color: #3A1212;
+    color: #3a1212;
     font-weight: bold;
   }
   .banner__img {
